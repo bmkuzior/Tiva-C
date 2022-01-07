@@ -1,0 +1,13 @@
+This system is designed to change the illumination of the built in LEDs on the Launchpad. 
+
+--Using ADC on a signal from a 10k Potentiometer, the output was varied accordingly.
+
+To calculate the sample values, the following formula was used. ----> Digital Sample = (Analog Input (volts) • 4095) / 3.3V(volts)
+
+The outputs were configured as follows:
+
+	--Red illuminates with Potentiomater below 1.4V, calculated value of 1760
+
+	--Blue illuminates with Potentiomater between 1.4V and 2.5V, range of 1760 < Vpot < 3112
+
+	--Green illuminates with Potentiomater above 2.5V. 
